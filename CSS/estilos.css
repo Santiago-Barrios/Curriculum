@@ -1,0 +1,526 @@
+/* reglas 
+selectores 
+declaraciones
+propiedades
+valores */
+
+
+/* selector de etiquetas body-section nombre de etiqueta */
+/* body
+{
+    background-color: aquamarine;
+} */
+/* selector descendente */
+/* body header div nav ol li a */
+/* selector de clase .nombre_clase */
+/* .link */
+/* selector de id # */
+/* #portafolio */
+ 
+body
+{
+    font-family: 'Source sans pro', sans-serif;
+    margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+    /* font-style: italic; */
+}
+h1
+{
+    font-size: 40px;
+    line-height: 1.5em;
+    letter-spacing: -0.2px;
+    color: white;
+
+/*     text-transform: uppercase;
+    text-decoration: underline; */
+}
+h1 strong
+{
+    color: #026fff;
+}
+h2
+{
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source sans pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.hero
+{
+    height: 300px;
+    /* background-image:url('../images/hero.jpg'); */
+    background-color: #1b2127;
+    /* background-size: 500px 300px; */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hero-image
+{
+    object-fit: cover;
+}
+.portfolio
+{
+    background-color: #fafafa;
+    padding: 20px;
+}
+.project
+{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    display:flex; 
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.project-strong
+{
+    font-family: 'Fjalla One', sans-serif;
+}
+.project-title
+{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.project-course
+{
+    margin : 10px 0;
+}
+.project-date
+{
+    margin : 10px 0;
+}
+.project-url
+{
+    margin: 10px 0;
+}
+.project-description
+{
+    font-size: 20px;
+}
+.project-details
+{
+    width: 50%;
+}
+.project-imageContainer
+{
+    width: 50%;
+}
+.project-imageContainer img
+{
+    max-width: 100%;
+}
+.header
+{
+    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu
+{
+    height: inherit;
+}
+
+.header ol
+{
+    display: flex;
+    height: 70px;
+}
+.header ol li
+{
+    height: inherit;
+  
+}
+.header a
+{
+    text-decoration: none;
+    color: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+ul,
+ol
+{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.footer
+{
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 1550px; */
+    flex-wrap: wrap;
+}
+.footer img
+{
+    vertical-align: middle;
+}
+.footer a
+{
+    color: white;
+}
+
+
+
+.events
+{
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.events-title
+{
+    margin-left: 20px;
+}
+.event
+{
+    margin: 1%;
+    width: 48%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f4fbff;
+    flex-shrink: 0;
+}
+figure
+{
+    margin: 0;
+}
+.event img
+{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+} 
+.event-detail
+{
+    margin: 20px 40px;
+    margin-top: -40px;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    text-align: center;
+}
+.event-description
+{
+    text-align: left;
+}
+.event-url
+{
+    text-decoration: none;
+    color: #056fff;
+    border: 2px solid;
+    padding: 3px 20px; 
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+
+.contact
+{
+    background-color: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    /* width: 1550px; */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social
+{
+
+}
+
+.social-link
+{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px;
+}
+
+.social-link.twitter
+{
+    background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook
+{
+    background-image: url('../images/facebook.svg');
+}
+
+.social-link.github
+{
+    background-image: url('../images/github.svg');
+}
+
+.social-link.instagram
+{
+    background-image: url('../images/instagram.svg');
+}
+
+.form-email input
+{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid ;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button 
+{
+    display: block;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.container
+{
+    /* border: 1px solid red; */
+    max-width: 1000px;
+    /* width: 100%; */
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+@media screen and (max-width: 1024px)
+{
+    .container
+    {
+        padding: 0 .8em;
+    }
+    .hero
+    {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em 1em;
+    }
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: -92px;
+        right: 0;
+        top: -529px;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    h1
+    {
+        z-index: 2;
+    }
+}
+@media screen and (max-width: 767px)
+{
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: -92px;
+        right: 0;
+        top: -420px;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    h1
+    {
+        font-size: 1.5em;
+    }
+    .header
+    {
+        display: block;
+        height: auto;
+    }
+    .header .logo
+    {
+        text-align: center;
+    }
+    .header ol
+    {
+        display: block;
+        height: auto;
+    }
+    .header ol li
+    {
+        height: 30px;
+    }
+    .header a
+    {
+        justify-content: center;
+    }
+    .project
+    {
+        display: block;
+    }
+    .project-details
+    {
+        width: auto;
+        /* font-size: 16px; */
+    }
+    .project-imageContainer
+    {
+        width: auto;
+        text-align: center;
+    }
+    .project-course, .project-date, .project-url
+    {
+        margin: .2em 0;
+    }
+    .project-title
+    {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-course
+    {
+        font-size: .8em;
+    }
+    .project-url
+    {
+        font-size: 1em;
+    }
+    .project-date
+    {
+        font-size: 1em;
+    }
+    .project-description
+    {
+        font-size: .8em;
+    }
+    h2
+    {
+        font-size: 1.5em;
+    }
+    .event
+    {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px)
+{
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: -39px;
+        right: 0;
+        top: -204px;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    h2
+    {
+        font-size: 1em;
+    }
+    .project-details
+    {
+        font-size: 12px;
+    }
+    h2
+    {
+        font-size: 1.6em;
+    }
+    .event-detail
+    {
+        /* 1em=16px */
+        margin: -2.5em .6em .6em .6em;
+        padding: .8em;
+    }
+    .contact
+    {
+        height: auto;
+        padding: 1em 0;
+        display: block;
+        text-align: center;
+    }
+    .form-email button 
+    {
+        margin: 1em auto;
+    }
+    .form-email h3
+    {
+        margin-top: 0;
+    }
+    .footer
+    {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .hero-image
+    {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: -116px;
+        bottom: 0;
+        width: 100%;
+        height: auto;
+    }
+    h2
+    {
+        font-size: .8em;
+    }
+    h1
+    {
+        font-size: 1em;
+    }
+}
