@@ -325,7 +325,7 @@ figure
     height: inherit;
     flex-wrap: inherit;
 }
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1023px)
 {
     .container
     {
@@ -430,7 +430,7 @@ figure
     }
     .project-description
     {
-        font-size: .8em;
+        font-size: 1em;
     }
     h2
     {
