@@ -241,7 +241,10 @@ figure
     margin-top: 15px;
     border-radius: 5px;
 }
-
+.event-examples
+{
+    font-size: .8em;
+}
 
 .contact
 {
