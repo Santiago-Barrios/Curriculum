@@ -53,7 +53,7 @@ valores */
     border-radius: 50%;
     display: block;
     background-color:rgba(0, 0, 0, .7);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -233,8 +233,6 @@ ol
     color: white;
 }
 
-
-
 .events
 {
     display: flex;
@@ -405,6 +403,29 @@ figure
 }
 @media screen and (max-width: 767px)
 {
+    .menu
+    {
+        position: fixed;
+        background-color: rgba(7, 92, 111, .9);
+        z-index: 3;
+        top: 0;
+        left: 0;
+        left: 100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* transition: .3s; */
+    }
+    .menu.is-active
+    {
+        left: 0;
+    }
+    .burger-buttom
+    {
+        display: flex;
+    }
     .hero-image
     {
         position: absolute;
@@ -436,7 +457,10 @@ figure
     }
     .header ol li
     {
-        height: 30px;
+        height: 70px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
     .header a
     {
