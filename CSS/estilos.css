@@ -430,9 +430,9 @@ figure
     {
         position: absolute;
         z-index: 1;
-        left: -92px;
+        left: 0px;
         right: 0;
-        top: -420px;
+        top: -200px;
         bottom: 0;
         width: 100%;
         height: auto;
@@ -527,9 +527,9 @@ figure
     {
         position: absolute;
         z-index: 1;
-        left: -39px;
+        left: 0px;
         right: 0;
-        top: -204px;
+        top: -100px;
         bottom: 0;
         width: 100%;
         height: auto;
@@ -583,7 +583,7 @@ figure
         z-index: 1;
         left: 0;
         right: 0;
-        top: -116px;
+        top: -90px;
         bottom: 0;
         width: 100%;
         height: auto;
